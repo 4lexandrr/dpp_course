@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dppcourse:
+    image: dppcourse
+    build:
+      context: .
+      dockerfile: ./Dockerfile
