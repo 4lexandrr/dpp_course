@@ -29,6 +29,7 @@ if __name__ == '__main__':
         ret, frame = capture.read()
         activation_key = cv.waitKey(1)
 
+
         for coord in x_y:
             cv.rectangle(frame, (coord[0]-5, coord[1]-5), (coord[0]+5, coord[1]+5), (0, 255, 0), 2)
         cv.imshow('frame', frame)
